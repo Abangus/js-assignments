@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    background-image: url(https://img.freepik.com/premium-vector/brown-watercolor-abstract-background_318204-71.jpg?w=2000);
+}
+.firstMsg {
+    color: cyan;
+    font-size: 30px;
+    text-align: center;
+    width: 500px;
+}
