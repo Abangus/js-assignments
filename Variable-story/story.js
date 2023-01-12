@@ -6,4 +6,5 @@ const class1 = prompt('What class do you have on first period')
 const class2 = prompt('What class do you have on second period')
 const class3 = prompt('What class do you have on third period')
 
-document.write (`<p class='firstMsg'> ${name} woke up at ${time} and went to ${school}. The first class that ${name} has is ${class1}. During a pop quiz, a ${scare} pop out on ${name}'s paper and followed him from ${class2} to class ${class3}</p>`)
+document.write (`<p class='firstMsg'> ${name} woke up at ${time} and went to ${school}. The first class that ${name} has is ${class1}. During a pop quiz, a ${scare} pop out on ${name}'s paper and followed him from ${class2} to ${class3}</p>`)
+document.write (`<img class="picture" src="https://img.freepik.com/premium-vector/cockroach-insect-pest-realistic-vector-sketch-illustration_231873-7202.jpg?w=2000">`)
