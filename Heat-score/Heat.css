@@ -1,0 +1,10 @@
+.score {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 184, 253);
+}
+
+.picture {
+    margin-left: 500px;
+    border-radius: 20px;
+}
