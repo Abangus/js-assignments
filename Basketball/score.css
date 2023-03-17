@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,800;1,600;1,700&family=VT323&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.back{
+    background-color: forestgreen;
+    width: 100vw;
+    height: 100vh; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreBoard{
+    border: 0.5rem solid white;
+    width: 99vw;
+    height: 95vh;
+
+    display: grid;
+    grid-template-rows: 9fr;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-areas: 
+    "guest TPG home";
+}
+
+/* GUEST */
+.guest {
+    grid-area: guest;
+}
+
+.side{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-style: italic;
+    font-size: 5rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-bottom: 0.5rem;
+}
+
+.score{
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 15rem;
+    border: 1px solid black;
+    width: 18vw;
+    background-color: black;
+    margin-left: 3rem;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fouls{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-style: italic;
+    font-size: 3rem;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+.list{
+    background-color: black;
+    color: white;
+    font-family: 'VT323', monospace;
+    width: 18vw;
+    height: 30vh;
+    margin-left: 3rem;
+}
+
+#list1{
+    font-size: 4rem;
+}
+/* Time / Period / Goal */
+.TPG{
+    grid-area: TPG;
+}
+
+#countdown{
+    border-right: 0.5rem solid white;
+    border-left: 0.5rem solid white;
+    border-bottom: 0.5rem solid white;;
+    width: 30vw;
+    height: 20vh;
+    font-family: 'VT323', monospace;
+    font-size: 10rem;
+    margin: 0;
+    color: white;
+    background-color: black;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.PG{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 3rem;
+    /* padding-left: 4rem; */
+    font-style: italic;
+
+
+    display: flex;
+    align-items: center;
+}
+
+.number{
+    background-color: black;
+    border: 1px solid black;
+    font-size: 10rem;
+    font-style: normal;
+    font-family: 'VT323', monospace;
+
+}
+
+#P1{
+    padding-top: 9rem;
+}
+
+#period{
+    margin-left: 5rem;
+}
+
+#reset{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-left: 7rem;
+    margin-top: 10rem;
+}
+
+/* Home */
+.home{
+    grid-area: home;
+}
+
+#side-2{
+    padding-left: 11rem;
+}
+
+#score-2{
+    margin-left: 9rem;
+}
+
+#fouls-2{
+    padding-left: 12rem;
+}
+
+#list2{
+    margin-left: 9rem;
+    font-size: 4rem;
+}
+
+#clearHome{
+    margin-left: 30rem;
+}
+
+#addHomeFouls{
+    margin-left: 9.5rem;
+}

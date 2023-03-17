@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="score.css">
+    <title>Hockey Ice Scoreboard</title>
+</head>
+<body>
+    <div class="back">
+        <div class="scoreBoard">
+            <div class="guest">
+                <div class="side">GUEST</div>
+                <div class="score">
+                    <button onclick="scoreGuestMinus()">-</button>
+                    <div class="scoreNumber" id="guestScore">0</div>
+                    <button onclick="scoreGuestPlus()">+</button>
+                </div>
+                <button onclick="clearGuest()">Clear</button>
+                <div class="fouls" id="fouls1">FOULS</div>
+                <div class="list" id="list1"></div>
+                <button onclick="addGuestFouls()" id="addGuestFouls">Add</button>
+                <button onclick="removeGuestFouls()">Remove</button>
+            </div>
+
+            <div class="TPG">
+                <div id="countdown">10:00</div>
+                <div class="PG" id="P1">
+                    PERIOD
+                    <button onclick="periodMinus()"id="period">-</button>
+                    <div class="number">1</div>
+                    <button onclick="periodPlus()" >+</button>
+                </div>
+                <button onclick="reset()" id="reset">Reset</button>
+            </div>
+
+            <div class="home">
+                <div class="side" id="side-2">HOME</div>
+                <div class="score" id="score-2">
+                    <button onclick="scoreHomeMinus()">-</button>
+                    <div class="scoreNumber" id="homeScore">0</div>
+                    <button onclick="scoreHomePlus()">+</button>
+                </div>
+                <button onclick="clearHome()" id="clearHome">Clear</button>
+                <div class="fouls" id="fouls-2">FOULS</div>
+                <div class="list" id="list2"></div>
+                <button onclick="addHomeFouls()" id="addHomeFouls">Add</button>
+                <button onclick="removeHomeFouls()">Remove</button>
+            </div>
+        </div>
+    </div>
+    <script src="score.js"></script>
+
+</body>
+</html>
