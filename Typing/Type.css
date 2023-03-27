@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Alkatra', cursive;
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    background-color: rgb(40, 108, 133);
+    flex-wrap: wrap;
+}
+
+.num1 {
+    margin-top: 80px;
+    margin-left: 220px;
+    margin-right: 45px;
+    border-radius: 15px;
+    background-color: rgb(140, 174, 208);
+    font-size: 4vh;
+    width: 200px;
+    height: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.num2 {
+    margin-top: 80px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 15px;
+    background-color: rgb(140, 174, 208);
+    font-size: 4vh;
+    width: 200px;
+    height: 160px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.num3 {
+    margin-top: 80px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 15px;
+    background-color: rgb(140, 174, 208);
+    font-size: 4vh;
+    width: 200px;
+    height: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.num4 { 
+    margin-top: 80px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 15px;
+    background-color: rgb(140, 174, 208);
+    font-size: 4vh;
+    width: 200px;
+    height: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.typewriter {
+    width: 400px;
+    display: flex;
+    flex-direction:column;
+    margin-left: 550px;
+    margin-top: 60px;
+}
