@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Robot Information</title>
+    <link rel="stylesheet" href="Robot.css">
   </head>
   <body>
     <h1>Robot Factory</h1>
@@ -16,13 +17,17 @@
       <label for="robot-equipment">Equipment Required:</label>
       <input placeholder="Equipment" type="text" id="robot-equipment"><br>
 
+      <label for="robot-image">Image URL:</label>
+      <input placeholder="Image" type="text" id="robot-image"><br>
+
       <input type="button" value="Submit" onclick="addRobot()">
     </form>
 
     <h2>Robots</h2>
-    <ul id="robot-list"></ul>
+    <div id="robot-list"></div>
 
     <script src="Robot.js"></script>
-
-    </body>
+  </body>
 </html>
+
+
