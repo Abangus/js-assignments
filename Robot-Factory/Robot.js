@@ -58,4 +58,3 @@ function deleteRobot() {
 }
 
 loadRobots();
-localStorage.clear()
