@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="Robot.css">
   </head>
   <body>
-    <h1>Robot Factory</h1>
     <form id="robot-form">
+      <h1>Robot Factory</h1>
       <label for="robot-type">Type of Robot:</label>
-      <input placeholder="Type" type="text" id="robot-type"><br>
+      <input placeholder=" Security/Medical/Cooking" type="text" id="robot-type"><br>
 
       <label for="robot-function">Function of Robot:</label>
       <input placeholder="Jobs" type="text" id="robot-function"><br>
@@ -22,12 +22,13 @@
 
       <input type="button" value="Submit" onclick="addRobot()">
     </form>
-
-    <h2>Robots</h2>
+    <form id="delete-form">
+      <label for="robot-delete">Delete Robots:</label>
+      <input placeholder=" Type/Function/Equipment" type="text" id="robot-delete">
+      <input type="button" value="Delete" onclick="deleteRobot()">
+    </form>
     <div id="robot-list"></div>
 
     <script src="Robot.js"></script>
   </body>
 </html>
-
-

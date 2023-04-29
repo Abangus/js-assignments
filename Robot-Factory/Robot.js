@@ -36,22 +36,25 @@ function updateRobotList() {
 
   robots.forEach(function(robot, index) {
     let listItem = document.createElement("li");
-    listItem.innerHTML = `${robot.type} - ${robot.function} - ${robot.equipment} - <img src="${robot.image}" alt="${robot.type} Image" width="50">`;
+    listItem.classList.add("new-item"); 
+    listItem.innerHTML = `Type: ${robot.type} <br></br> Function: ${robot.function} <br></br> Equipment: ${robot.equipment} <br></br> <img src="${robot.image}" alt="${robot.type} Image" >`;
     robotList.appendChild(listItem);
-
-    let deleteButton = document.createElement("button");
-    deleteButton.innerHTML = "Delete";
-    deleteButton.addEventListener("click", function() {
-      deleteRobot(index);
-    });
-    listItem.appendChild(deleteButton);
   });
 }
 
-function deleteRobot(index) {
-  robots.splice(index, 1);
-  saveRobots();
-  updateRobotList();
+function deleteRobot() {
+  let searchTerm = document.getElementById("robot-delete").value.trim().toLowerCase();
+
+  if (searchTerm) {
+    robots = robots.filter(function(robot) {
+      return !Object.values(robot).some(function(value) {
+        return value.toLowerCase().includes(searchTerm);
+      });
+    });
+
+    saveRobots();
+    updateRobotList();
+  }
 }
 
 loadRobots();
