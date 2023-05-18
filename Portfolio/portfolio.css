@@ -297,3 +297,121 @@ span {
     font-size: 4rem;
     color: #333;
 }
+
+.music {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+}
+
+.music-player, .music-player2, .music-player3 {
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    background: #a48df1d6;
+    box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    overflow: hidden;
+    color: var(--white-color);
+    margin: 20px;
+  }
+  
+  .music-name {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .music-name, 
+  .artist-name {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+  .picture {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 180px;
+    height: 180px;
+    background: var(--main-color);
+    background-image: url(music-1.jfif);
+    background-size: cover;
+    border-radius: 15px;
+  }
+  
+  .picture2 {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 180px;
+    height: 180px;
+    background: black;
+    background-image: url(music-2.jpg);
+    background-size: cover;
+    border-radius: 15px;
+  }
+  
+  .picture3 {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 180px;
+    height: 180px;
+    background: rgb(255, 255, 255);
+    background-image: url(music-3.jfif);
+    background-size: cover;
+    border-radius: 15px;
+  }
+  
+  .controls {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .play-btn {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #c4b4fad6;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .play-btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white-color);
+  }
+  
+  .bx-pause {
+    display: none;
+  }
+  
+  .play-btn.pause .bx-play {
+    display: none;
+  }
+  
+  .play-btn.pause .bx-pause {
+    display: block;
+  }
+  
+  i {
+    font-size: 50px;
+  }
+  
+  .bx-play {
+    margin-left: 3px;
+  }
